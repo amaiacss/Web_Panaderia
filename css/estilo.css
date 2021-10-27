@@ -1,0 +1,464 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+body {
+	font-family: 'Baskerville Old Face';
+}
+/* HEADER LOGOTIPO Y MENÚ */
+header div {
+	background-color: #fefbf2;
+	padding: 2rem;
+	text-align: center;
+}
+header p {
+	text-align: right;
+}
+header nav {
+	background-color: #f79645;
+}
+header ul {
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 2rem;
+	font-weight: bold;
+}
+li a {
+	color: white;
+}
+h2 {
+	font-size: 3rem;
+	font-weight: bold;
+	text-align: center;
+	margin: 2rem;
+}
+nav li{
+	padding: 2rem;
+}
+.where, nav li:hover{
+	background: rgba(255,255,255,0.5);
+}
+
+/* IMAGEN CENTRAL CON TITULO (INDEX) */
+.cabecera {
+	background-image: url(../img/cabecera.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 500px;
+	color: white;
+	font-size: 3rem;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	padding: 4rem;
+}
+/* PARTE CENTRAL (INDEX) */
+main, .categorias {
+	display: flex;
+	flex-wrap: wrap;
+}
+section {
+	width: 60%;
+	font-size: 1.5rem;
+}
+.categorias div, .encabezado {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+	padding: 1rem;
+	align-items: center;
+}
+.categorias img {
+	border-radius: 20px;
+}
+.categorias button {
+	margin: 1rem;
+	border-radius: 60px;
+	font-size: 2rem;
+	padding: 2rem;
+	background-color: #e0a45e;	
+}
+.categorias a {
+	color: white;
+}
+.categorias #b{
+	background-color: #fd8ca0;
+}
+/* FORMULARIO DE CONTACTO (INDEX) */
+aside {
+	width: 40%;
+	font-size: 1.5rem;
+}
+aside h2 {
+	margin-top: 0;
+	padding-top: 4rem;
+}
+.arriba, .abajo {
+	background-color: #f2f2f2;
+}
+.formulario, .check {
+	display: flex;
+}
+.formulario div {
+	display: flex;
+	flex-direction: column;
+}
+.formulario input {
+	border-radius: 8px;
+	height: 2rem;
+	margin: 1.5rem;
+}
+.formulario label {
+	padding: 2rem;
+}
+.formulario div:last-of-type{
+	width: 70%;
+}
+.medio{
+	background-color:#fafafa;
+}
+.medio h5 {
+	font-weight: bold;
+}
+.medio h3 {
+	text-align: center;
+	padding: 2rem;
+	font-size: 2rem;
+}
+.check  {
+	justify-content: space-evenly;
+}
+.check p{
+	padding: 0.6rem;
+}
+.abajo {
+	text-align: center;
+	padding: 2rem;
+}
+.abajo button, .piePrimero button, .form-loc button {
+	background-color: #e1a35e;
+	color: brown;
+	border-radius: 10px;
+	font-size: 1.5rem;
+	padding: 1rem;
+	margin: 2rem;
+}
+/* CABECERA IMAGEN (QUIENES-SOMOS) */
+.cabecera2 {
+	background-image: url(../img/pan-quienes-somos.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 500px;
+}
+/*CAJA NAVEGACIÓN*/
+.navega {
+	background-color: #f8f8f8;
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 6rem;
+}
+b {
+	font-weight: bold;
+}
+/* CONTENIDO PRINCIPAL (QUIENES-SOMOS) */
+.main-quienes {
+	justify-content: center;
+}
+.pre {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.pre p{
+	font-size: 2rem;
+	width: 60%;
+	text-align: center;
+}
+.main-parrafo{
+	display: flex;
+	font-size: 1.5rem;
+	margin-top: 2rem;
+}
+.main-parrafo p {
+	width: 55%;
+	padding: 3rem;
+	letter-spacing: 0.15rem;
+}
+.main-parrafo img {
+	padding: 2rem;
+	width: 100%;
+	height: 100%;
+}
+.main-parrafo2 {
+	font-size: 1.5rem;
+	letter-spacing: 0.15rem;
+	padding: 0 3rem 3rem;
+}
+/* CONTENIDO PRINCIPAL PRODUCTOS */
+.main-productos {
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.main-productos p {
+	width: 55%;
+	font-size: 1.5rem;
+}
+/* CONTENIDO PRINCIPAL (REALIZAR-PEDIDO) */
+.main-pedidos {
+	flex-direction: column;
+	font-size: 1.5rem;
+}
+.arriba2 {
+	width: 50%;
+	align-self: center;
+}
+.main-pedidos .medio {
+	background-color: white;
+}
+.formato-pedido {
+	background-color: #fdf8f4;
+	border-radius: 40px;
+	padding: 3rem;
+	margin: 2rem;
+}
+#center {
+	justify-content: center;
+}
+.main-pedidos .abajo{
+	background-color: white;
+}
+.main-pedidos .formato-pedido input {
+	cursor: pointer;
+
+}
+/*CABECERA CONTACTANOS*/
+.cabecera3 {
+    background-image: url(../img/masa.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 400px;   
+}
+/* CONTENIDO PRINCIPAL (CONTACTANOS) */
+.main-contacto {
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.5rem;
+	letter-spacing: 0.15rem;
+}
+.form-loc {
+	margin: 4rem;
+	display: flex;
+	align-items: flex-start;
+}
+.formulario-contacto {
+	display: block;
+}
+.form-loc input {
+	width: 50vw;
+}
+#aviso {
+	width: 5vw;
+}
+/* PASTELERIA  Y PANADERIA */
+.main-pasteleria, .main-panaderia {
+	justify-content: center;
+}
+.titulo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	
+}
+h1 {
+	font-size: 3rem;
+	padding: 2rem;
+}
+.titulo div {
+	border: 2px solid brown;
+	width: 80%;
+}
+.contenido-pasteleria, .contenido-panaderia {
+	display: flex;
+	font-size: 1.5rem;
+}
+.texto {
+
+}
+.texto-img {
+	margin: 6vw;
+	width: 50%;
+	line-height: 1.6;
+}
+.texto-img img {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	border-radius: 40px;
+}
+.texto h3 {
+	font-weight: bold;
+	font-size: 2rem;
+	color: brown;
+}
+
+/* FOOTER */
+footer {
+	background-color: #592517;
+	color: white;
+	display: flex;
+	font-size: 1.5rem;
+}
+footer p:first-child {
+	font-weight: bold;
+	padding-bottom: 2rem;
+}
+.piePrimero button {
+	margin: 0;
+	float: inline-end;
+	width: 30%;
+}
+.piePrimero, .redes, .localizacion {
+	margin: 3rem;
+}
+.piePrimero label {
+	padding: 1rem;
+}
+.piePrimero input {
+	margin: 0.5rem;
+}
+
+.localizacion img {
+	margin: 1rem;
+	width: 100%;
+	height: auto;
+}
+.piePrimero textarea{
+	margin: 0.5rem;
+}
+/* FOOTER CONTACTANOS */
+#foot-cont{
+	justify-content: center;
+}
+#redes-cont {
+	display: flex;
+}
+.redes-img {
+	margin: 0 3rem;
+}
+textarea {
+	border-radius: 8px;
+	margin: 1.5rem;
+}
+.formulario-contacto textarea {
+	width: 50vw;
+}
+
+@media only screen and (max-width: 1120px){
+	nav ul {
+		font-size: 1rem;		
+	}
+	.texto h2, .main-contacto h2 {
+		font-size: 2rem;
+	}
+	nav li,.piePrimero, .main-contacto, .main-productos p, .main-parrafo p, .main-parrafo2, .texto {
+		text-align: center;
+	}
+	.cabecera {
+		height: 100%;
+	}
+	main, nav ul, .categorias, .piePrimero, .form-loc, .check, .main-parrafo, .contenido-pasteleria, .contenido-panaderia {
+		display: block;
+	}
+	section, aside, .categorias img, .form-loc img, .arriba2, .main-productos p, .pre p  {
+		width: 100%;
+	}
+	.categorias img, .main-contacto h2 {
+		margin: auto;
+	}
+	.medio, nav li, .main-contacto h2, .formato-pedido, .arriba, .main-parrafo p, .main-parrafo2 {
+		padding: 1rem;
+	}
+	.piePrimero{
+		margin: 1rem;
+	}
+	footer {
+		display: flow-root;
+	}
+	.piePrimero div:first-child{
+		display: none;
+	}
+	.piePrimero button {
+		float: none;
+	}
+	.main-contacto{
+		letter-spacing: 0;
+	}
+	.form-loc input, .formato-pedido {
+		margin:0 0 2rem 0;
+	}
+	.main-index .formulario input, .arriba2 input{
+		margin: 1.5rem 0;
+	}
+	.main-parrafo p, .texto-img {
+		width: auto;
+	}
+	.main-parrafo img {
+		padding: 0;
+	}
+	textarea {
+		width: 50vw;
+	}
+	
+}
